@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CeraVe Skincare Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="https://www.cerave.com/" class="logo">
+  <img src="assets/logo.png" alt="CeraVe Logo">
+</a>
+    <input type="search" placeholder="SEARCH" class="search" />
+    <nav class="nav-links">
+      <button onclick="goHome()">HOME</button>
+      <a href="https://www.cerave.com/">SHOP</a>
+      <a href="https://www.cerave.com/skin-smarts/skincare-tips-advice">BLOG</a>
+      <a href="https://www.cerave.com/">CONTACT</a>
+    </nav>
+    <button id="hamburger" class="hamburger">☰</button>
+  </header>
+
+  <!-- Landing Page -->
+  <section id="landing" class="page">
+    <div class="hero-image">Hero Image (yellow box)</div>
+    <h1>Ready For Your Routine?</h1>
+    <p>Try out our dermatologist-backed skincare quiz to find the products perfect for you!</p>
+    <button onclick="startQuiz()" class="cta">Start Test</button>
+  </section>
+
+  <!-- Quiz Page -->
+  <section id="quiz" class="page hidden">
+    <div id="question-container">
+      <div class="question-header">
+        <h2 id="question-text">Question text</h2>
+        <button id="info-btn" class="info-btn">i</button>
+      </div>
+      <div id="info-box" class="info-box hidden">
+        <a href="https://www.cerave.com/skin-smarts/skincare-tips-advice/what-skin-type-do-i-have" target="_blank">
+          Read about skin types
+        </a>
+      </div>
+      <div id="answers" class="answers"></div>
+    </div>
+  </section>
+
+  <!-- Results Page -->
+  <section id="result" class="page hidden">
+    <h1>Congratulations!!!</h1>
+    <button onclick="showRoutine()" class="cta">Click for your new skincare routine!</button>
+    <canvas id="confetti-canvas"></canvas>
+  </section>
+
+  <!-- Routine Page -->
+  <section id="routine" class="page hidden">
+    <h2>Your skincare routine</h2>
+    <div class="product-card">
+      <div class="product-photo">Product photo</div>
+      <div>
+        <p><strong>STEP 1: Product name</strong></p>
+        <p>Why this product is good for your skin type and concern</p>
+        <a href="#">link</a>
+      </div>
+    </div>
+    <!-- Repeat .product-card for more products -->
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
