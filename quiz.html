@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz - CeraVe</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+  <div class="nav-top">
+    <a href="https://www.cerave.com/" class="logo">
+      <img src="assets/logo.png" alt="CeraVe Logo">
+    </a>
+  </div>
+  <nav class="nav-links">
+    <a href="index.html">HOME</a>
+    <a href="https://www.cerave.com/">SHOP</a>
+    <a href="https://www.cerave.com/skin-smarts/skincare-tips-advice">BLOG</a>
+    <a href="https://www.cerave.com/">CONTACT</a>
+  </nav>
+</header>
+
+<section id="quiz" class="page">
+  <div id="question-container">
+    <div class="qa-group">
+      <div class="question-header">
+        <h2 id="question-text">Question text</h2>
+        <button id="info-btn" class="info-btn">i</button>
+      </div>
+      <div id="answers" class="answers center-answers"></div>
+    </div>
+    <div id="info-box" class="info-box hidden">
+      <iframe src="https://www.cerave.com/skin-smarts/skincare-tips-advice/what-skin-type-do-i-have"
+        title="Skin type blog" frameborder="0"></iframe>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
